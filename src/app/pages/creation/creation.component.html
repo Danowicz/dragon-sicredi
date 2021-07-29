@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+  <div class="header">
+    <h2>{{ isUpdating ? 'Update' : 'Create' }} a Dragon.</h2>
+    <a [routerLink]="['/list']">Dragon list.</a>
+  </div>
+  <div class="input">
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+  <div class="input">
+    <label for="type">Type: </label>
+    <input id="type" type="text" formControlName="type">
+  </div>
+  <button (click)="validateAndPost()">{{ isUpdating ? 'Update' : 'Create' }}</button>
+</form>
