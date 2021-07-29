@@ -1,0 +1,9 @@
+<div *ngFor="let dragon of dragons" class="container">
+  <p>Name:&nbsp; <b>{{ dragon.name }}</b></p>
+  <div class="buttons">
+    <button class="buttons__detail" (click)="dragonDetails(dragon.id)">Details</button>
+    <button class="buttons__detail" (click)="editDragon(dragon)">Edit</button>
+    <button class="buttons__delete" (click)="deleteDragon(dragon.id)">Delete</button>
+  </div>
+</div>
+<button (click)="registrate()" class="add-button">+</button>
