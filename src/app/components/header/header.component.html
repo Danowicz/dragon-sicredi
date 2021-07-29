@@ -1,0 +1,9 @@
+<header>
+  <div class="flex">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Dragon Logo">
+      <h1>Dragon Crud</h1>
+    </div>
+    <button *ngIf="authService.isLogged()" (click)="authService.logout()">Logout</button>
+  </div>
+</header>

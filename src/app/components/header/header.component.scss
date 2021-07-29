@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+header {
+  z-index: 2;
+  font-family: 'Unica One', cursive;
+  height: var(--header-height);
+  width: 100vw;
+  background-image: linear-gradient( 109.6deg,  rgba(231,76,60,1) 11.2%, rgba(203,67,53,1) 91.1% );
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .flex {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  img {
+    margin-inline: var(--padding-normal) 16px;
+    width: 30px;
+  }
+
+  h1 {
+    color: white;
+    font-size: 20px;
+  }
+
+  button {
+    margin-right: 24px;
+    background-color: #b00023;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px;
+    border: none;
+  }
+
+}
