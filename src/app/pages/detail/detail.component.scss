@@ -1,0 +1,12 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: var(--padding-normal);
+  margin-bottom: var(--padding-normal);
+}
+
