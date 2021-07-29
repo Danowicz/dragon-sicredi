@@ -9,18 +9,18 @@ import { Dragon } from '../models/dragon.model';
 })
 export class ApiService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  public getDragon(id?: string): Observable<Dragon> {
-    return this.http.get<any>(environment.apiUrl + '/' + id);
+  public getDragon(id: string = ''): Observable<Array<Dragon> | Dragon> {
+    return this.http.get<Array<Dragon> | Dragon>(environment.apiUrl + '/' + id);
   }
 
   public deleteDragon(id: string): Observable<Dragon> {
     return this.http.delete<Dragon>(environment.apiUrl + '/' + id);
   }
 
-  public createDragon(id: string, dragon: Dragon): Observable<Dragon> {
-    return this.http.post<Dragon>(environment.apiUrl + '/' + id, dragon);
+  public createDragon(dragon: Dragon): Observable<Dragon> {
+    return this.http.post<Dragon>(environment.apiUrl, dragon);
   }
 
   public updateDragon(id: string, dragon: Partial<Dragon>): Observable<Partial<Dragon>> {
