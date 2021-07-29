@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Unica+One&display=swap');
+
+:root {
+  --header-height: 60px;
+  --padding-normal: 24px;
+}
+
+body, h2 {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
